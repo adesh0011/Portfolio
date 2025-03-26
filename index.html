@@ -9,29 +9,58 @@
 
 
  <!-- box icons-->
+ <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
 
  <!-- custom css -->
 
  <link rel="stylesheet" href=css/style.css>
+
 </head>
+
 <body> 
+       
+     <!-- header design -->
 
-    <div id="header">
-        <div class="container">
-         <nav>
-            <img src="./images/logo.png" class="logo">
-            <ul>
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Services</a></li>
-                <li><a href="#">Portfolio</a></li>
-                <li><a href="#">Contact</a></li>
-            </ul>
-         </nav>
+    <header class="header">
+         <a href="#" class="logo">Portfolio</a>
 
-        </div> 
+         <i class='bx bx-menu' id="menu-icon"></i>
 
-  </div>
+         <nav class="navbar">
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#services">Services</a>
+            <a href="#portfolio">Portfolio</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
 
+      <!-- home section design -->
+       <section class="home" id="home">
+        <div class="home-content">
+            <h3>Hello, It's Me</h3>
+            <h1>Adesh Saxena</h1>
+            <h3>And I'm a <span>Frontend Developer</span></h3>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quos minima 
+            possimus aliquam! Praesentium dicta nihil quis aliquam quos, ullam quidem.</p>
+            <div class="social-media">
+                <a href="#"><i class='bx bxl-facebook' ></i></a>
+                <a href="#"><i class='bx bxl-twitter' ></i></a>
+                <a href="#"><i class='bx bxl-instagram' ></i></a>
+                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+            </div>
+            <a href="" class="btn">Download CV</a>
+        </div>
+
+        <div class="home-image">
+            <img src="images/home.png" alt="">
+        </div>
+       </section>
+      
+
+
+
+     <!-- custom js -->
+      <scrpt src="js/script.js"></scrpt>
 </body>
 </html>
