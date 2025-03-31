@@ -30,7 +30,7 @@ body{
 
 section {
     min-height: 100vh;
-    padding: 10rem 9% 2 rem;
+    padding: 10rem 9% 2rem;
 }
 
 .header{
@@ -65,7 +65,7 @@ section {
 }
 
 .navbar a:hover,
-navbar a:active {
+.navbar a:active {
        color: var(--main-color);
 }
 
@@ -103,7 +103,7 @@ navbar a:active {
 }
 
 .home-content p {
-    font-size:1.6rem;
+    font-size: 1.6rem;
     margin-left: 20px; 
 }
 
@@ -125,7 +125,7 @@ navbar a:active {
 
 .social-media a:hover{
     background: var(--main-color);
-    color: var(--second bg-color);
+    color: var(--second-bg-color);
     box-shadow: 0 0 1rem var(--main-color);
 }
 
@@ -185,24 +185,25 @@ navbar a:active {
 
 .services-container {
     display: flex;
-    justify-content: center;
+    justify-content: space-around; /* Spaces boxes evenly */
     align-items: center;
-    flex-wrap: wrap;
-    gap: 2rem;
-    margin-left: 100px;
-    margin-right: 100px;
+    flex-wrap: wrap; /* Ensures responsiveness */
+    gap: 2rem; /* Adds spacing between boxes */
+    margin-left: 50px;
+    margin-right: 50px;
 }
-
 
 .services-container .services-box {
-    flex: 1 1 30rem;
+    flex: 1 1 300px; /* Ensures boxes stay in a row but remain responsive */
+    max-width: 30%; /* Prevents boxes from stretching too much */
     background: var(--second-bg-color);
-    padding: 3rem 2rem 4rem;
+    padding: 3rem 2rem;
     border-radius: 2rem;
     text-align: center;
-    border: .2rem solid var(--bg-color);
-    transition: .5s ease;
+    border: 0.2rem solid var(--bg-color);
+    transition: 0.5s ease;
 }
+
 
 .services-container .services-box:hover {
     border-color: var(--main-color);
@@ -215,7 +216,7 @@ navbar a:active {
 }
 
 .services-box h3 {
-    font-size: 2.6rem;
+    font-size: 2rem;
 }
 
 .services-box p {
@@ -307,7 +308,7 @@ navbar a:active {
 }
 
 .contact form {
-    max-width: 70;
+    max-width: 70rem;
     margin: 1rem auto;
     text-align: center;
     margin-bottom: 3rem;
@@ -389,12 +390,12 @@ navbar a:active {
 }
 
 /* BREAKPOINTS */
-@media (max-width: 1200px) {
+@media screen and (max-width: 1200px) {
     html {
         font-size: 55%;
     }
 }
-@media (max-width: 991px) {
+@media screen and (max-width: 991px) {
     .header {
         padding: 2rem 3%;
     } 
@@ -419,7 +420,7 @@ navbar a:active {
     }
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 768px) {
         #menu-icon {
             display: block;
         }
@@ -441,17 +442,21 @@ navbar a:active {
         }
 
         .navbar a {
-            display: blocl;
+            display: block;
             font-size: 2rem;
             margin: 3rem 0;
         }
 
-        .home-content{
+        .home {
             flex-direction: column;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
         .home-content h3 {
             font-size: 2.6rem;
+            margin-left: 20px;
         }
 
         .home-content h1 {
@@ -485,14 +490,14 @@ navbar a:active {
         }
 }
 
-@media (max-width: 617px) {
+@media screen and (max-width: 617px) {
     .portfolio-container {
         grid-template-columns: 1fr;
     }
 }
 
 
-@media (max-width: 450px) {
+@media screen and (max-width: 450px) {
     html {
         font-size: 50%;
     }
@@ -503,7 +508,7 @@ navbar a:active {
 }
 
 
-@media (max-width: 365px) {
+@media screen and (max-width: 365px) {
     .home-img img {
         width: 90vw;
     }
