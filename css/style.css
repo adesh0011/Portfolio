@@ -413,110 +413,60 @@ section {
     color: var(--second-bg-color);
 }
 
-/* BREAKPOINTS */
+/*Responsive Breakpoints */
 @media screen and (max-width: 1200px) {
     html {
         font-size: 55%;
     }
 }
+
 @media screen and (max-width: 991px) {
     .header {
         padding: 2rem 3%;
-    } 
-     section {
+    }
+    section {
         padding: 10rem 3% 2rem;
-     }
-
-     .services {
-        padding-bottom: 7rem;
-     }
-
-     .portfolio {
-        padding-bottom: 7rem;
-     }
-
-     .contact {
-        min-height: auto;
-     }
-    
-    .footer {
-        padding: 2rem 3%;
     }
 }
 
 @media screen and (max-width: 768px) {
-        #menu-icon {
-            display: block;
-        }
-
-        .navbar {
-            position: absolute;
-            top: 100%;
-            left: 0;
-            width: 100%;
-            padding: 1rem 3%;
-            background: var(--bg-color);
-            border-top: .1rem solid rgba(0, 0, 0, .2);
-            box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-            display: none;
-        }
-        
-        .navbar.active {
-            display: block;
-        }
-
-        .navbar a {
-            display: block;
-            font-size: 2rem;
-            margin: 3rem 0;
-        }
-
-        .home {
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-        }
-
-        .home-content h3 {
-            font-size: 2.6rem;
-            margin-left: 20px;
-        }
-
-        .home-content h1 {
-            font-size: 5rem;
-        }
-
-        .home-img img {
-            width: 70vw;
-            margin-top: 4rem;
-            padding-right: 20px; /* Reduce padding */
-            margin-right: -20px;
-        }
-
-        .about {
-            flex-direction: column-reverse;
-            padding-right: 20px; /* Reduce padding */
-            margin-right: -20px;
-        }
-
-        .about img {
-            width: 70vw;
-            margin-top: 4rem;
-            padding-right: 20px; /* Reduce padding */
-            margin-right: -20px;
-        }
-
-        .services h2 {
-            margin-bottom: 3rem;
-        }
-
-        .portfolio h2 {
-            margin-bottom: 3rem;
-        }
-
-        .portfolio-container {
-            grid-template-columns: repeat(2, 1fr);
-        }
+    #menu-icon {
+        display: block;
+    }
+    .navbar {
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0, 0, 0, .2);
+        box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
+        display: none;
+    }
+    .navbar.active {
+        display: block;
+    }
+    .navbar a {
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
+    }
+    .home, .about {
+        flex-direction: column;
+        align-items: center;
+    }
+    .home-content h3, .home-content h1, .about img {
+        font-size: 2.6rem;
+        text-align: center;
+    }
+    .home-img img, .about img {
+        width: 70vw;
+        margin-top: 4rem;
+    }
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
 }
 
 @media screen and (max-width: 617px) {
@@ -525,36 +475,21 @@ section {
     }
 }
 
-
 @media screen and (max-width: 450px) {
     html {
-        font-size: 50%;
+        font-size: 45%;
     }
-
     .contact form .input-box input {
         width: 100%;
     }
 }
 
-
 @media screen and (max-width: 365px) {
-    .home-img img {
+    .home-img img, .about-img img {
         width: 90vw;
     }
-
-    .about-img img {
-        width: 90vw;
-    }
-
     .footer {
-        flex-direction: column-reverse;
-    }
-
-    .footer p {
+        flex-direction: column;
         text-align: center;
-        margin-top: 2rem;
     }
 }
-
-
-
