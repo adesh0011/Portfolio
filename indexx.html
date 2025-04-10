@@ -30,7 +30,7 @@
             <a href="#home">Home</a>
             <a href="#about">About</a>
             <a href="#services">Services</a>
-            <a href="#portfolio">Portfolio</a>
+            <a href="#portfolio">Projects</a>
             <a href="#contact">Contact</a>
         </nav>
     </header>
@@ -42,9 +42,9 @@
             <h1>Adesh Saxena</h1>
             <h3>And I'm a <span class="multiple-text"</span></h3>
             <p> 
-                I’m a 3rd-year B.Tech student at driven by curiosity and creativity. 
+                I’m a 3rd-year B.Tech student driven by curiosity and creativity. 
                 I specialize in building responsive and user-friendly 
-                websites using HTML, CSS, JavaScript, Bootstrap, PHP, and more.</p>
+                websites using HTML, CSS, JavaScript, Bootstrap, PHP.</p>
             <div class="social-media">
                 <a href="#"><i class='bx bxl-facebook' ></i></a>
                 <a href="#"><i class='bx bxl-twitter' ></i></a>
@@ -90,12 +90,12 @@
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>Web Development</h3>
+                <div id="webDevDetails" style="display: none;">
                 <p> I offer modern, responsive, and efficient web solutions to help individuals and 
                     businesses build a strong online presence.
-                    I create visually appealing and fully functional websites using HTML, CSS, JavaScript, 
-                    and Bootstrap — optimized for all devices.
                 </p>
-                <a href="#" class="btn">Read More</a>
+                </div>
+                <a href="javascript:void(0);" class="btn" id="webDevBtn">Read More</a>
             </div>
 
             <div class="services-box">
@@ -103,7 +103,6 @@
                 <h3>Graphic Design</h3>
                 <p> I craft visually engaging designs that communicate your brand, message, or 
                     idea effectively — with style and creativity.
-                    Custom, memorable logos that represent your brand identity and make a lasting impression.
                 </p>
                 <a href="#" class="btn">Read More</a>
             </div>
@@ -111,10 +110,8 @@
             <div class="services-box">
                 <i class='bx bx-bar-chart-alt' ></i>
                 <h3>Digital Marketing</h3>
-                <p> Grow your brand with engaging content, creative visuals, and platform-specific 
-                    strategies across Instagram, Facebook, LinkedIn, and more.
-                    Optimize your website to rank higher on Google and drive organic traffic with 
-                    keyword research, on-page SEO, and technical SEO.
+                <p> Grow your brand with engaging content, creative visuals,and platform-specific 
+                    strategies across Instagram, Facebook.
                 </p>
                 <a href="#" class="btn">Read More</a>
             </div>
@@ -132,8 +129,8 @@
                 <img src="images/portfolio1.jpg" alt="">
                 <div class="portfolio-layer">
                     <h4>E-Learning Management System<h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, 
-                    at ratione ipsa sunt eveniet nobis voluptatibus minima soluta consectetur deleniti?
+                    <p> The iSchool E-Learning web application is a comprehensive online learning platform 
+                        designed to facilitate seamless education delivery.
                     </p>
                     <a href="https://github.com/adesh0011/ELearning-Management-System"><i 
                        class='bx bx-link-external'></i></a>
@@ -202,6 +199,20 @@
           <!-- typed js -->
 
           <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+
+          <script>
+            const webDevBtn = document.getElementById('webDevBtn');
+            const webDevDetails = document.getElementById('webDevDetails');
+            let isWebDevOpen = false;
+        
+            webDevBtn.addEventListener('click', () => {
+                isWebDevOpen = !isWebDevOpen;
+                webDevDetails.style.display = isWebDevOpen ? 'block' : 'none';
+                webDevBtn.textContent = isWebDevOpen ? 'Read Less' : 'Read More';
+            });
+        </script>
+        
+        
 
      <!-- custom js -->
       <script src="js/script.js"></script>
