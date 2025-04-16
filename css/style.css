@@ -349,6 +349,98 @@ section {
     color: var(--second-bg-color);
 }
 
+.portfolio-box .portfolio-layer1 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer1 {
+    transform: translateY(0);
+}
+
+.portfolio-layer1 h4 {
+    font-size: 3rem;
+}
+
+.portfolio-layer1 p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    text-align: center;
+}
+
+.portfolio-layer1 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer1 a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
+.portfolio-box .portfolio-layer2 {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .1), var(--main-color));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 0 4rem;
+    transform: translateY(100%);
+    transition: .5s ease;
+}
+
+.portfolio-box:hover .portfolio-layer2 {
+    transform: translateY(0);
+}
+
+.portfolio-layer2 h4 {
+    font-size: 3rem;
+}
+
+.portfolio-layer2 p {
+    font-size: 1.6rem;
+    margin: .3rem 0 1rem;
+    text-align: center;
+}
+
+.portfolio-layer2 a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    margin-left: 15px;
+    width: 5rem;
+    height: 5rem;
+    background: var(--text-color);
+    border-radius: 50%;
+}
+
+.portfolio-layer2 a i {
+    font-size: 2rem;
+    color: var(--second-bg-color);
+}
+
 .contact h2 {
     margin-bottom: 3rem;
     font-size: 4rem;
