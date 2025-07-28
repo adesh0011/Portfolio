@@ -51,7 +51,7 @@
                 <a href="https://www.instagram.com/ash_saxena_/"><i class='bx bxl-instagram' ></i></a>
                 <a href="https://www.linkedin.com/in/adesh01"><i class='bx bxl-linkedin' ></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <a href=" https://drive.google.com/file/d/1QwQZWh5e5jzDdyaUcqNedySo4mTlFEPH/view?usp=sharing" class="btn">Download CV</a>
         </div>
 
         <div class="home-image">
@@ -90,12 +90,12 @@
             <div class="services-box">
                 <i class='bx bx-code-alt'></i>
                 <h3>Web Development</h3>
-                <div id="webDevDetails" style="display: none;">
+                <div id="webDevDetails">
                 <p> I offer modern, responsive, and efficient web solutions to help individuals and 
                     businesses build a strong online presence.
                 </p>
                 </div>
-                <a href="javascript:void(0);" class="btn" id="webDevBtn">Read More</a>
+                <a href="#" class="btn">Read More</a>
             </div>
 
             <div class="services-box">
@@ -144,17 +144,18 @@
                     <p>  "Designed interactive dashboards and reports using Power BI to visualize 
                          complex data insights. Proficient in data modeling, DAX.
                     </p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <a href="https://github.com/adesh0011/PowerBi"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
             <div class="portfolio-box">
                 <img src="images/portfolio6.jpg" alt="">
                 <div class="portfolio-layer2">
                     <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus, 
-                    at ratione ipsa sunt eveniet nobis voluptatibus minima soluta consectetur deleniti?
+                    <p> A responsive and modern website design created with a focus on user experience and visual appeal. 
+                        This project involved building clean UI layouts, intuitive navigation, and mobile-friendly features 
+                        using HTML5, CSS3, and JavaScript. 
                     </p>
-                    <a href="#"><i class='bx bx-link-external'></i></a>
+                    <a href="https://adesh-v1.netlify.app/"><i class='bx bx-link-external'></i></a>
                 </div>
             </div>
         </div>
@@ -165,20 +166,28 @@
 
        <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
-
-        <form action="#">
-            <div class="input-box">
-                <input type="text" placeholder="Full Name"> 
-                <input type="email" placeholder="Email Address"> 
-            </div>
-            <div class="input-box">
-                <input type="number" placeholder="Mobile Number"> 
-                <input type="text" placeholder="Email Subject"> 
-            </div>
-            <textarea name="" id="" col="30" rows="10" placeholder="Your Message"></textarea>
-            <input type="submit" value="Send message" class="btn">
+      
+        <form action="https://formsubmit.co/your-email@gmail.com" method="POST">
+          <div class="input-box">
+            <input type="text" name="name" placeholder="Full Name" required>
+            <input type="email" name="email" placeholder="Email Address" required>
+          </div>
+          <div class="input-box">
+            <input type="number" name="phone" placeholder="Mobile Number" required>
+            <input type="text" name="subject" placeholder="Email Subject" required>
+          </div>
+          <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+      
+          <!-- Optional hidden inputs -->
+          <input type="hidden" name="_subject" value="New message from your portfolio!">
+          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_template" value="table">
+          <input type="hidden" name="_next" value="https://your-portfolio.com/thank-you.html">
+      
+          <input type="submit" value="Send Message" class="btn">
         </form>
-       </section>
+      </section>
+      
        
        <!-- footer design-->
         <footer class="footer">
